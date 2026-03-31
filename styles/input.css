@@ -44,7 +44,7 @@ fieldset {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    margin-top: 1rem;
+    margin-top: 0;
 }
 
 .tipo-wrapper label {
@@ -88,4 +88,33 @@ fieldset {
     grid-template-columns: 1fr 1fr; /* metade pra cada */
     gap: 1rem;
     margin-top: 24px;
+    align-items: start;
+}
+
+.grande {
+    justify-content: start;
+}
+
+
+.input-wrapper textarea {
+    width: 100%;
+    height: 136px;
+    padding: 1rem;
+    border: 1px solid #363B40;
+    border-radius: 8px;
+    background-color: #1C1F21;
+    color: #869198;
+    outline: none;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.input-wrapper textarea::placeholder {
+    color: #869198;
+}
+
+.descricao {
+    margin-top: 24px;
+    width: 100%;
+    max-width: 350rem;
 }
