@@ -1,0 +1,39 @@
+.forms {
+    background-color: #212427;
+    display: inline-block;
+    width: 100%;        /* ocupa o container */
+    max-width: 1500px;  /* limite máximo */
+    height: auto;   
+    border: 20px solid #1E1E1E;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+}
+
+.forms h2 {
+    font: bold var(--heading-md);
+    color: #F9F9F9;
+    padding-bottom: 40px;
+    padding-top: 80px;
+    padding-left: 0px;
+}
+
+.começo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.começo img {
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+.começo p {
+    font: bold var(--heading-sm);
+    color: #F9F9F9;
+    margin: 0;
+    padding: 0;
+}

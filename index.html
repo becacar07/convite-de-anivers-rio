@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Festivite</title>
+</head>
+<body>
+    <div id="app">
+    <aside>
+      <div class="aside-container">
+        <header>
+            <img src="assets/icons/Logo.svg" alt="">
+          <h1>Festivite</h1>
+          <p>Crie um convite digital para o seu evento</p>
+        </header>
+      </div>
+    </aside>
+
+    <main class="forms">
+      <h2>Crie seu convite</h2>
+      <div class="começo">
+      <img src="assets/icons/calendar.svg" alt="">
+      <p>Sobre o evento</p>
+    </div>
+
+   <form method="post" enctype="text/plain">
+  <fieldset class="primeiro">
+    
+    <div class="input-wrapper">
+      <label for="title">Título</label>
+      <input type="text" name="title" id="title" placeholder="Nome do evento">
+    </div>
+
+    <div class="date-grid">
+      <div class="input-wrapper">
+        <label for="start">Início</label>
+        <input type="datetime-local" id="start" name="start">
+      </div>
+
+      <div class="input-wrapper">
+        <label for="end">Fim</label>
+        <input type="datetime-local" id="end" name="end">
+      </div>
+    </div>
+
+    <div class="tipo-local-grid">
+
+  <div class="tipo-wrapper">
+    <label>Tipo</label>
+
+    <div class="tipo-buttons">
+      <button type="button" class="active">
+        <img src="assets/icons/building-2.svg" alt="">
+        Presencial
+      </button>
+
+      <button type="button">
+        <img src="assets/icons/video.svg" alt="">
+        Online
+      </button>
+    </div>
+  </div>
+
+  <div class="input-wrapper">
+    <label>Local</label>
+    <input type="text" placeholder="Link ou endereço">
+  </div>
+
+</div>
+    </div>
+
+  </fieldset>
+</form>
+
+<script>
+const buttons = document.querySelectorAll('.tipo-buttons button');
+
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+
+    // remove active de todos
+    buttons.forEach(btn => btn.classList.remove('active'));
+
+    // adiciona no clicado
+    button.classList.add('active');
+  });
+});
+</script>
+
+
+
+
+    </main>
+  </div>
+    
+</body>
+</html>

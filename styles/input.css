@@ -1,0 +1,91 @@
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.forms {
+    padding: 0 80px;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.input-wrapper label {
+    font: var(--body-sm);
+    color: #C8CDD0;
+}
+
+.input-wrapper input {
+    width: 100%;
+    height: 48px;
+    padding: 0 1rem;
+    border: 1px solid #363B40;
+    border-radius: 8px;
+    background-color: #1C1F21;
+    color: #869198;
+    outline: none;
+    box-sizing: border-box;
+
+}
+
+.date-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 35rem);
+    gap: 1rem;
+    padding-top: 10px;
+}
+
+.tipo-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.tipo-wrapper label {
+    color: #C8CDD0;
+    font: var(--body-sm);
+}
+
+.tipo-buttons {
+    display: flex;
+    width: 100%;
+    height: 48px;
+    padding: 0;
+    border: 1px solid #363B40;
+    border-radius: 8px;
+    background-color: #1C1F21;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.tipo-buttons button {
+   flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: #C8CDD0;
+    cursor: pointer;
+}
+
+.tipo-buttons button.active {
+    background-color: #2A2F33;
+    color: #FFFFFF;
+}
+
+.tipo-local-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* metade pra cada */
+    gap: 1rem;
+    margin-top: 24px;
+}
