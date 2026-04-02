@@ -37,3 +37,13 @@
     margin: 0;
     padding: 0;
 }
+
+.quase{
+display: flex;
+font: var(--body-sd);
+color: #C8CDD0;
+padding-top: 28px;
+gap: 350px;
+padding-bottom: 28px;
+}
+
