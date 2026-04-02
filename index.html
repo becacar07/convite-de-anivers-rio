@@ -258,13 +258,15 @@ buttons.forEach(button => {
   </div>
 
   <div class="arquivo">
-    <input type="file" name="enviar" id="enviar">
+  
+    <div class="Nenhum">
+        <input type="file" name="enviar" id="enviar">
     <label for="enviar">
       <img src="assets/upload.svg" alt="">
       <p>Selecionar</p>
     </label>
-    <div class="Nenhum">
     <p>Nenhum arquivo selecionado</p>
+
     </div>
     <div class="Sim">
       image.png
@@ -288,9 +290,46 @@ buttons.forEach(button => {
   </div>
   </div>
 
+<div class="final">
+  <div class="privacidade">
+    <label for="priv">
+      <input type="checkbox" name="final" id="priv">
+      <span class="check"></span>
+      <p>Li e concordo com os <strong>Termos e Condições</strong> e com a <strong>Política de Privacidade</strong></p>
+    </label>
+  </div>
+
+  <div class="mail">
+    <label for="mail">
+      <input type="checkbox" name="final" id="mail">
+      <span class="check"></span>
+      <p>Aceito receber atualizações e promoções por e-mail</p>
+    </label>
+  </div>
+
+  <div class="sms">
+    <label for="sms">
+      <input type="checkbox" name="final" id="sms">
+      <span class="check"></span>
+      <p>Aceito receber atualizações e promoções por SMS</p>
+    </label>
+  </div>
+
+  
+</div>
+<footer>
+  <div class="butonfinal">
+      <input type="submit" name="enviar" id="submit">
+    <label for="submit" class="buttonfinal2">
+    </label>
+  </div>
+
+</footer>
 
     </main>
+
   </div>
+
     
 </body>
 </html>
