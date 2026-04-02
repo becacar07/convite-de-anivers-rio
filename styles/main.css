@@ -7,7 +7,7 @@
     border: 20px solid #1E1E1E;
     border-radius: 12px;
     position: relative;
-    overflow: hidden;
+    overflow-y: auto;
 }
 
 .forms h2 {

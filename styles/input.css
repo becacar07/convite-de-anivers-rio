@@ -16,7 +16,7 @@ fieldset {
 }
 
 .input-wrapper label {
-    font: var(--body-sm);
+    font: var(--body-md);
     color: #C8CDD0;
 }
 
@@ -49,7 +49,7 @@ fieldset {
 
 .tipo-wrapper label {
     color: #C8CDD0;
-    font: var(--body-sm);
+    font: var(--body-md);
 }
 
 .tipo-buttons {
@@ -111,6 +111,12 @@ fieldset {
 
 .input-wrapper textarea::placeholder {
     color: #869198;
+    font: var(--body-md);
+}
+
+.input-wrapper input::placeholder {
+    font-style: var(--body-md);
+    color: #869198;
 }
 
 .descricao {
@@ -118,3 +124,10 @@ fieldset {
     width: 100%;
     max-width: 350rem;
 }
+
+.colors input:checked + label {
+    border: 2px solid #163cd5bf;
+    box-shadow: 0 0 0 2px rgba(6, 51, 214, 0.905);
+    outline-offset: 10px;
+}
+
